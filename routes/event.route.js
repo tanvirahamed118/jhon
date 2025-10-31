@@ -19,7 +19,7 @@ const router = express.Router();
 
 router.get("/", auth, getAllEvent);
 router.get("/slot", auth, getAllSlot);
-router.get("/slot/lander", auth, getAllSlotByLander);
+router.get("/slot/lander", getAllSlotByLander);
 router.get("/google", goolgeAuth);
 router.get("/google/callback", auth, googleAuthCallback);
 router.get("/:id", auth, getOneEvent);
