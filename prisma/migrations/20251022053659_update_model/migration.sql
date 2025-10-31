@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "echo" ALTER COLUMN "name" SET DATA TYPE TEXT;
