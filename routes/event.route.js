@@ -23,7 +23,7 @@ router.get("/slot/lander", getAllSlotByLander);
 router.get("/google", goolgeAuth);
 router.get("/google/callback", auth, googleAuthCallback);
 router.get("/:id", auth, getOneEvent);
-router.post("/", auth, createEvent);
+router.post("/", createEvent);
 router.post("/slot", auth, createSlot);
 router.patch("/:id", auth, updateEvent);
 router.patch("/toggle/:id", auth, toggleEvent);
